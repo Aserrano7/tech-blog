@@ -1,24 +1,16 @@
-{{#each userPosts as |userPost|}}
-{{>dashCard}}
-{{/each}}
 
-<h2>Create New Post</h2>
-<form id="new-post">
-    <div>
-        <label for="post-title">Title:</label>
-        <br>
-        <input type="text" id="post-title">
-        <br>
-    </div>
-    <div>
-        <label for="post-text">Text:</label>
-        <br>
-        <textarea name="post-text" id="post-text" cols="30" rows="10"></textarea>
-        <br>
-    </div>
-    <div>
-        <button type="submit">Submit</button>
-    </div>
-</form>
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+    {{#each posts as |post|}}
+      {{> dashboard-card post}}
+    {{/each}}
+
+</section>
+{{/if}}
+
+<button type="submit" class="btn"><a class="link" href="/dashboard/new">+ New Post</a></button>
+
+
 
 <script src="../js/post.js"></script>
