@@ -2,17 +2,16 @@
     <div class="nav-container">
         <a href="/">Tech-Blog</a>
         <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/dasboard">Dashboard</a></li>
-            {{#if loggedIn}}
-                <li><a id="logout"  href="/login">Logout</a></li>
-            {{else}}
-                <li><a href="/login">Login</a></li>
-                <li><a href="/signup">Sign Up</a></li>
-            {{/if}}
+            <a class="link" href="/">Home</a>
+                    <a class="link" href="/dashboard">Dashboard</a>
+                    {{#if loggedIn}}
+                    <a class="link" href="/" id="logout">Logout</a>
+                    {{else}}
+                    <a class="link" href="/login">Login</a>
+                    {{/if}}
         </ul>
     </div>
 </nav>
    {{#if loggedIn}}
-    <script src="../../public/js/logout.js"></script>
+  {{!--  <script src="/js/logout.js"></script> --}}
     {{/if}}

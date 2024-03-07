@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech-Blog</title>
+     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>TECH Blog</h1>
-    {{>navbar}}
-    {{{body}}}
-    
+
+    <main>
+        {{>navbar}}
+      {{{ body }}}
+    </main>
+  </div>
+
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+
 </body>
+
 </html>
