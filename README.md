@@ -20,3 +20,4 @@ N/A
 - Social Sharing: Share articles on social media platforms to reach a wider audience
 ## Deployed Application
 https://github.com/Aserrano7/tech-blog
+https://tranquil-thicket-19171-f7e0a5645f7b.herokuapp.com/
